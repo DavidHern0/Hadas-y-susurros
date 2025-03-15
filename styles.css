@@ -1,0 +1,59 @@
+body {
+    background-color: #093D23;
+    color: #FAF3E0;
+    font-family: 'Lora', serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+header {
+    padding: 20px;
+    background: rgba(201, 165, 88, 0.2);
+}
+
+h1 {
+    font-family: 'Cinzel Decorative', serif;
+    color: #C9A558;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #C9A558;
+    text-decoration: none;
+    font-family: 'Playfair Display', serif;
+    font-size: 18px;
+}
+
+nav ul li a:hover {
+    color: #ac8d4c;
+}
+
+.card {
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid #C9A558;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+footer {
+    padding: 10px;
+    background: rgba(201, 165, 88, 0.2);
+    font-size: 14px;
+}
