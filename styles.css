@@ -23,7 +23,7 @@ h2 {
 
 nav ul {
     list-style: none;
-    padding: 0;
+    padding: 5px;
 }
 
 nav ul li {
@@ -213,6 +213,14 @@ section {
         0 0 1px #C9A558, 
         0 0 5px #C9A558;
     animation: glow 4s ease-in-out infinite alternate;
+}
+
+.mb {
+   margin-bottom: 0px; 
+}
+
+.slogan {
+    margin-top: 0px;
 }
 
 @keyframes glow {
