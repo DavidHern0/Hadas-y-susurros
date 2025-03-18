@@ -1,3 +1,4 @@
+
 body {
     background-color: #093D23;
     color: #FAF3E0;
@@ -9,9 +10,11 @@ body {
 }
 
 header {
+    position: relative;
     padding: 20px;
     background: rgba(201, 165, 88, 0.2);
 }
+
 header h1 {
     font-size: 48px;
 }
@@ -223,6 +226,24 @@ section {
 
 .slogan {
     margin-top: 0px;
+}
+
+.membership-btn {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background: #C9A558;
+    color: #093D23;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    transition: background 0.3s ease;
+}
+
+.membership-btn:hover {
+    background: #b08d48;
 }
 
 @keyframes glow {
