@@ -12,6 +12,9 @@ header {
     padding: 20px;
     background: rgba(201, 165, 88, 0.2);
 }
+header h1 {
+    font-size: 48px;
+}
 
 header h1 a,
 h1,
@@ -208,7 +211,6 @@ section {
 }
 
 .glow-text {
-    font-size: 48px;
     text-shadow: 
         0 0 1px #C9A558, 
         0 0 5px #C9A558;
