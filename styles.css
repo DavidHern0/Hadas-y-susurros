@@ -278,3 +278,37 @@ section {
         opacity: 1;
     }
 }
+
+.firefly-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    overflow: hidden;
+    z-index: -1;
+}
+
+.firefly {
+    position: absolute;
+    width: 6px;
+    height: 6px;
+    background: rgba(201, 165, 88, 0.8);
+    border-radius: 50%;
+    box-shadow: 0 0 10px rgba(201, 165, 88, 1);
+    animation: flicker 1.5s infinite alternate, moveAround 60s linear infinite;
+}
+
+@keyframes flicker {
+    0% { opacity: 0.8; transform: scale(1); }
+    100% { opacity: 0.3; transform: scale(1.2); }
+}
+
+@keyframes moveAround {
+    0% { transform: translate(0, 0); }
+    25% { transform: translate(var(--tx1), var(--ty1)); }
+    50% { transform: translate(var(--tx2), var(--ty2)); }
+    75% { transform: translate(var(--tx3), var(--ty3)); }
+    100% { transform: translate(var(--tx4), var(--ty4)); }
+}
