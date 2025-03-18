@@ -13,9 +13,12 @@ header {
     background: rgba(201, 165, 88, 0.2);
 }
 
-h1 {
+header h1 a,
+h1
+h2 {
+    text-decoration: none; 
     font-family: 'Cinzel Decorative', serif;
-    color: #C9A558;
+    color: #C9A558; 
 }
 
 nav ul {
@@ -58,3 +61,23 @@ footer {
     background: rgba(201, 165, 88, 0.2);
     font-size: 14px;
 }
+
+.us {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* height: 100vh; */
+    padding-block: 50px;
+    padding-inline: 0;
+    text-align: center;
+}
+
+.us img {   
+    margin-top: 20px;
+}
+
+.us p {
+    font-size: 22px;
+    max-width: 80%;
+    line-height: 1.8;
+} 
