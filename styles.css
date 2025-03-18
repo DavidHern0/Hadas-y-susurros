@@ -85,13 +85,8 @@ footer {
     background: rgba(9, 61, 35, 0.9); 
     padding: 40px 10px;
     text-align: center;
-}
-
-.contact h2 {
-    color: #C9A558;
-    font-size: 2rem;
-    margin-bottom: 20px;
-    text-transform: uppercase;
+    padding-block: 50px;
+    padding-inline: 0;
 }
 
 .contact form {
