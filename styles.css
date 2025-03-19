@@ -367,7 +367,6 @@ section {
     }
 }
 
-/* Estilos para la sección de "Nuestros títulos" */
 .our_books {
     display: flex;
     flex-direction: column;
@@ -453,4 +452,127 @@ section {
 
 .terms ul {
     list-style-type: none;
+}
+
+.membership-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    border: 1px solid #C9A558;
+    box-shadow: 0 0 10px rgba(201, 165, 88, 0.5);
+}
+
+.membership-form label {
+    font-family: 'Lora', serif;
+    color: #FAF3E0;
+    font-size: 1rem;
+    align-self: flex-start;
+    margin-top: 10px;
+}
+
+.membership-form input {
+    width: 100%;
+    padding: 12px;
+    margin-top: 5px;
+    border: none;
+    border-radius: 5px;
+    background: rgba(255, 255, 255, 0.2);
+    color: #FAF3E0;
+    font-family: 'Lora', serif;
+    font-size: 1rem;
+}
+
+.membership-form input::placeholder {
+    color: #FAF3E0;
+    opacity: 0.7;
+}
+
+.membership-form legend {
+    font-family: 'Lora', serif;
+    color: #C9A558;
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+.membership-form label input {
+    margin-right: 10px;
+}
+
+.membership-form .tarjeta-info {
+    display: none;
+}
+
+.tarjeta-info {
+    display: flex !important;
+    flex-direction: column;
+}
+
+.membership-form button {
+    background: #C9A558;
+    color: #093D23;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    margin-top: 20px;
+    font-family: 'Playfair Display', serif;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.membership-form input[disabled], button:disabled {
+    background: rgba(255, 255, 255, 0.1);
+    cursor: not-allowed;
+}
+
+.membership-form .tarjeta-info label {
+    font-size: 1rem;
+    color: #FAF3E0;
+    margin-top: 10px;
+    align-self: flex-start;
+}
+
+.membership-form .tarjeta-info input {
+    margin-top: 5px;
+}
+
+.membership-form .tarjeta-info input[type="text"] {
+    width: 100%;
+    max-width: 250px;
+}
+
+.membership-form .tarjeta-info input[type="month"] {
+    width: 100%;
+    max-width: 150px;
+}
+
+.membership-form input[type="radio"]:checked {
+    background-color: #C9A558;
+    border-color: #C9A558;
+    transition: background-color 0.3s ease;
+}
+
+.membership-form input[type="radio"]:disabled {
+    cursor: not-allowed;
+}
+
+.us img {
+    margin-top: 20px;
+}
+
+@media (max-width: 768px) {
+    .membership-form {
+        width: 90%;
+        padding: 15px;
+    }
+
+    .membership-form input[type="radio"],
+    .membership-form button {
+        width: 100%;
+    }
 }
