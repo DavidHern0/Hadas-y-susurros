@@ -88,7 +88,6 @@ nav ul li a:hover {
         cursor: pointer;
         color: #C9A558;
         font-size: 30px;
-        margin-right: 20px;
     }
 
     nav.active ul {
