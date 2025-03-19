@@ -64,6 +64,49 @@ nav ul li a:hover {
     transition: all 0.3s ease;
 }
 
+@media (max-width: 768px) {
+    nav ul {
+        display: none;
+        flex-direction: column;
+        background-color: #093D23;
+        position: absolute;
+        width: 100%;
+        margin: 0;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    nav ul li a {
+        font-size: 20px;
+    }
+
+    nav .menu-icon {
+        display: block;
+        cursor: pointer;
+        color: #C9A558;
+        font-size: 30px;
+        margin-right: 20px;
+    }
+
+    nav.active ul {
+        display: flex;
+    }
+}
+
+@media (min-width: 769px) {
+    nav ul {
+        display: flex;
+        justify-content: center;
+    }
+    nav .menu-icon {
+        display: none;
+    }
+}
+
+
 .card {
     background: rgba(255, 255, 255, 0.1);
     border: 1px solid #C9A558;
