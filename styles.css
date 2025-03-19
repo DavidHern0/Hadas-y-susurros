@@ -366,3 +366,91 @@ section {
         transform: translate(var(--tx4), var(--ty4));
     }
 }
+
+/* Estilos para la sección de "Nuestros títulos" */
+.our_books {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.our_books h2 {
+    font-size: 36px;
+    color: #C9A558;
+    margin-bottom: 40px;
+}
+
+.our_books .book-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+}
+
+.our_books .book {
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid #C9A558;
+    padding: 20px;
+    border-radius: 10px;
+    width: 300px;
+    transition: transform 0.3s ease;
+    text-align: left;
+}
+
+.our_books .book:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 20px rgba(201, 165, 88, 0.8);
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.our_books .book img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.our_books .book h3 {
+    font-size: 22px;
+    color: #C9A558;
+    margin-bottom: 15px;
+}
+
+.our_books .book p {
+    font-size: 16px;
+    color: #FAF3E0;
+    margin-bottom: 10px;
+}
+
+.our_books .book .price {
+    font-size: 18px;
+    font-weight: bold;
+    color: #C9A558;
+}
+
+.our_books .book .price span {
+    color: #a9dac1;
+    font-weight: normal;
+}
+
+.our_books .book .book-link {
+    text-decoration: none;
+    color: #C9A558;
+    font-weight: bold;
+    font-size: 16px;
+    margin-top: 15px;
+    display: inline-block;
+}
+
+.our_books .book .book-link:hover {
+    text-decoration: underline;
+    color: #ac8d4c;
+    transition: all 0.3s ease;
+}
+
+.terms ul {
+    list-style-type: none;
+}
