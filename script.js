@@ -26,3 +26,31 @@ document.addEventListener("DOMContentLoaded", function () {
         container.appendChild(firefly);
     }
 });
+
+document.querySelectorAll('.event-card').forEach(card => {
+
+});
+
+document.querySelectorAll('.event-card').forEach(card => {
+    card.addEventListener('mousemove', (e) => {
+        const rect = card.getBoundingClientRect();
+        const cardCenterX = rect.left + rect.width / 2;
+        const cardCenterY = rect.top + rect.height / 2;
+
+        const distanceX = Math.abs(cardCenterX - e.clientX);
+        const distanceY = Math.abs(cardCenterY - e.clientY);
+
+        const threshold = 100;
+        if (distanceX < threshold && distanceY < threshold) {
+            card.classList.add('clicked');
+        }   
+    });
+
+    card.addEventListener('click', () => {
+        if (card.classList.contains('clicked')) {
+            card.classList.remove('clicked');
+        } else {
+            card.classList.add('clicked');
+        }
+    });
+});

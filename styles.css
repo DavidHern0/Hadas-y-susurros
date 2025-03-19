@@ -169,10 +169,17 @@ footer {
     max-width: 200px;
 }
 
-.event_container {
+/* .event_container {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    padding: 20px;
+} */
+
+.event_container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
     padding: 20px;
 }
 
@@ -181,7 +188,8 @@ footer {
     color: #093D23;
     border: 2px solid #C9A558;
     margin: 10px;
-    max-width: 600px;
+    max-width: 300px;
+    max-height: 500px;
     padding: 25px;
     border-radius: 10px;
     transition: transform 0.3s;
@@ -190,10 +198,11 @@ footer {
     overflow: hidden;
 }
 
-.event-card:hover {
+.event-card:hover, .clicked {
     box-shadow: 0 0 20px rgba(201, 165, 88, 0.8);
     transition: all 0.3s ease;
-    transform: scale(1.05);
+    max-width: 600px;
+    max-height: max-content;
 }
 
 .event-card h2 {
