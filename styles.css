@@ -36,9 +36,9 @@ header h1 {
 header h1 a,
 h1,
 h2 {
-    text-decoration: none; 
+    text-decoration: none;
     font-family: 'Cinzel Decorative', serif;
-    color: #C9A558; 
+    color: #C9A558;
 }
 
 nav ul {
@@ -96,7 +96,7 @@ footer {
     text-align: center;
 }
 
-.us img {   
+.us img {
     margin-top: 20px;
 }
 
@@ -104,7 +104,8 @@ footer {
     font-size: 22px;
     max-width: 80%;
     line-height: 1.8;
-} 
+}
+
 .contact {
     padding: 40px 10px;
     text-align: center;
@@ -128,7 +129,8 @@ footer {
     margin-top: 10px;
 }
 
-.contact input, .contact textarea {
+.contact input,
+.contact textarea {
     width: 100%;
     padding: 12px;
     margin-top: 5px;
@@ -140,7 +142,8 @@ footer {
     font-size: 1rem;
 }
 
-.contact input::placeholder, .contact textarea::placeholder {
+.contact input::placeholder,
+.contact textarea::placeholder {
     color: #FAF3E0;
     opacity: 0.7;
 }
@@ -169,27 +172,41 @@ footer {
     max-width: 200px;
 }
 
-/* .event_container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    padding: 20px;
-} */
 
-.event_container {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    justify-items: center;
-    padding: 20px;
+@media (max-width: 768px) {
+    .event_container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 20px;
+    }
+
+    .event-card {
+        max-width: max-content;
+        max-height: max-content;
+    }
 }
+
+@media (min-width: 768px) {
+    .event_container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        justify-items: center;
+        padding: 20px;
+    }
+
+    .event-card {
+        max-width: 300px;
+        max-height: 500px;
+    }
+}
+
 
 .event-card {
     background-color: #FAF3E0;
     color: #093D23;
     border: 2px solid #C9A558;
     margin: 10px;
-    max-width: 300px;
-    max-height: 500px;
     padding: 25px;
     border-radius: 10px;
     transition: transform 0.3s;
@@ -198,7 +215,8 @@ footer {
     overflow: hidden;
 }
 
-.event-card:hover, .clicked {
+.event-card:hover,
+.clicked {
     box-shadow: 0 0 20px rgba(201, 165, 88, 0.8);
     transition: all 0.3s ease;
     max-width: 600px;
@@ -228,7 +246,7 @@ footer {
 }
 
 .no-drag {
-    pointer-events: none; 
+    pointer-events: none;
 }
 
 section {
@@ -236,14 +254,14 @@ section {
 }
 
 .glow-text {
-    text-shadow: 
-        0 0 1px #C9A558, 
+    text-shadow:
+        0 0 1px #C9A558,
         0 0 5px #C9A558;
     animation: glow 4s ease-in-out infinite alternate;
 }
 
 .mb {
-   margin-bottom: 0px; 
+    margin-bottom: 0px;
 }
 
 .slogan {
@@ -270,11 +288,12 @@ section {
 
 @keyframes glow {
     0% {
-        text-shadow: 
-            0 0 1px #C9A558, 
+        text-shadow:
+            0 0 1px #C9A558,
     }
+
     100% {
-        text-shadow: 
+        text-shadow:
             0 0 5px #C9A558;
     }
 }
@@ -283,6 +302,7 @@ section {
     0% {
         opacity: 0;
     }
+
     100% {
         opacity: 1;
     }
@@ -310,14 +330,35 @@ section {
 }
 
 @keyframes flicker {
-    0% { opacity: 0.8; transform: scale(1); }
-    100% { opacity: 0.3; transform: scale(1.2); }
+    0% {
+        opacity: 0.8;
+        transform: scale(1);
+    }
+
+    100% {
+        opacity: 0.3;
+        transform: scale(1.2);
+    }
 }
 
 @keyframes moveAround {
-    0% { transform: translate(0, 0); }
-    25% { transform: translate(var(--tx1), var(--ty1)); }
-    50% { transform: translate(var(--tx2), var(--ty2)); }
-    75% { transform: translate(var(--tx3), var(--ty3)); }
-    100% { transform: translate(var(--tx4), var(--ty4)); }
+    0% {
+        transform: translate(0, 0);
+    }
+
+    25% {
+        transform: translate(var(--tx1), var(--ty1));
+    }
+
+    50% {
+        transform: translate(var(--tx2), var(--ty2));
+    }
+
+    75% {
+        transform: translate(var(--tx3), var(--ty3));
+    }
+
+    100% {
+        transform: translate(var(--tx4), var(--ty4));
+    }
 }
