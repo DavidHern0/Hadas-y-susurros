@@ -494,6 +494,7 @@ section {
 
 .terms ul {
     list-style-type: none;
+    padding: 0;
 }
 
 .membership-form {
