@@ -72,6 +72,7 @@ nav ul li a:hover {
         position: absolute;
         width: 100%;
         margin: 0;
+        z-index: 2;
     }
 
     nav ul li {
@@ -93,6 +94,10 @@ nav ul li a:hover {
     nav.active ul {
         display: flex;
     }
+
+    .gallery-img {
+        width: 155px;
+    }
 }
 
 @media (min-width: 769px) {
@@ -102,6 +107,9 @@ nav ul li a:hover {
     }
     nav .menu-icon {
         display: none;
+    }
+    .gallery-img {
+        width: 250px;
     }
 }
 
@@ -129,7 +137,8 @@ footer {
 }
 
 .us,
-.events {
+.events,
+.gallery-container {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -347,10 +356,23 @@ section {
 @keyframes fadeIn {
     0% {
         opacity: 0;
+        transform: scale(0.8);
     }
 
     100% {
         opacity: 1;
+        transform: scale(1);
+    }
+}
+
+@keyframes slideIn {
+    0% {
+        opacity: 0;
+        transform: translateX(-50px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
     }
 }
 
@@ -618,4 +640,85 @@ section {
     .membership-form button {
         width: 100%;
     }
+}.gallery-wrapper {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.arrow {
+    position: absolute;
+    top: 50%;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    font-size: 2em;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    z-index: 1;
+}
+
+.left {
+    left: 0;
+    transform: translateY(-50%);
+}
+
+.right {
+    right: 0;
+    transform: translateY(-50%);
+}
+
+.gallery {
+    display: flex;
+    gap: 10px;
+    overflow: hidden;
+}
+
+.gallery-img {
+    height: auto;
+    cursor: pointer;
+    animation: slideIn 1s forwards;
+    transition: transform 0.3s ease, opacity 0.5s ease; /
+}
+
+.gallery-img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 10px rgba(201, 165, 88, 0.8);
+}
+
+.lightbox {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    animation: fadeIn 0.5s ease;
+}
+
+.lightbox-img {
+    max-width: 90%;
+    max-height: 80%;
+    border-radius: 10px;
+}
+
+.lightbox .close {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    font-size: 40px;
+    color: #C9A558;
+    cursor: pointer;
+}
+
+.lightbox-caption {
+    padding-top: 20px;
+    color: #C9A558;
+    font-size: 18px;
+    text-align: center;
 }

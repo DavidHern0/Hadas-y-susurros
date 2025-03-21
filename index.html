@@ -22,7 +22,7 @@
         <a href="./pages/membership.html" class="membership-btn">Hazte socio!</a>
     </header>
     <nav>
-    <div class="menu-icon" onclick="toggleMenu()">☰</div>
+        <div class="menu-icon" onclick="toggleMenu()">☰</div>
         <ul>
             <li><a href="./src/Carta - Hadas y Susurros.pdf" target="_blank">Carta</a></li>
             <li><a href="./pages/us.html">Quiénes somos</a></li>
@@ -31,6 +31,21 @@
             <li><a href="./pages/contact.html">Contacto</a></li>
         </ul>
     </nav>
+    <section class="gallery-container">
+        <h2>Nuestros productos mágicos</h2>
+        <div class="gallery-wrapper">
+            <button class="arrow left" id="a-left" onclick="moveGallery('left')">&#10094;</button>
+            <div class="gallery" id="gallery"></div>
+            <button class="arrow right" id="a-right" onclick="moveGallery('right')">&#10095;</button>
+        </div>
+    </section>
+
+    <div id="lightbox" class="lightbox">
+        <span class="close" onclick="closeLightbox()">&times;</span>
+        <img id="lightbox-img" class="lightbox-img">
+        <span id="lightbox-caption" class="lightbox-caption"></span>
+    </div>
+
     <section class="card" onclick="window.open('./src/Carta - Hadas y Susurros.pdf', '_blank')">
         <h2>Nuestra Carta</h2>
         <p>Explora una selección de cafés y postres encantados</p>
