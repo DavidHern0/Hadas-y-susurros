@@ -98,7 +98,28 @@ document.addEventListener("DOMContentLoaded", function () {
         "SUSURRO NOCTURNO3.jpg",
         "té danza d las estrellas ice.jpg",
         "té danza de las estrellas.jpg",
-        "te danza star.jpg"
+        "te danza star.jpg",
+        "Carta (1).jpg",
+        "Carta (1).png",
+        "Carta (2).jpg",
+        "Carta (3).jpg",
+        "Carta (4).jpg",
+        "Carta (5).jpg",
+        "Carta (6).jpg",
+        "Carta (7).jpg",
+        "Carta (8).jpg",
+        "Carta (9).jpg",
+        "Carta (10).jpg",
+        "Carta (11).jpg",
+        "Carta (12).jpg",
+        "Carta (13).jpg",
+        "Carta (14).jpg",
+        "Carta (15).jpg",
+        "Carta (16).jpg",
+        "Carta (17).jpg",
+        "Carta (18).jpg",
+        "Carta (19).jpg",
+        "Carta (20).jpg"       
     ];
 
     const gallery = document.getElementById("gallery");
