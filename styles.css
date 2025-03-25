@@ -97,6 +97,7 @@ nav ul li a:hover {
 
     .gallery-img {
         width: 155px;
+        height: 155px;
     }
 }
 
@@ -112,6 +113,7 @@ nav ul li a:hover {
 
     .gallery-img {
         width: 250px;
+        height: 250px;
     }
 }
 
@@ -676,7 +678,6 @@ button:disabled {
 }
 
 .gallery-img {
-    height: auto;
     cursor: pointer;
     animation: slideIn 1s forwards;
     transition: transform 0.3s ease, opacity 0.5s ease;/

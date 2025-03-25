@@ -62,9 +62,43 @@ function toggleMenu() {
 
 document.addEventListener("DOMContentLoaded", function () {
     const imageNames = [
-        "gallery1.png", "gallery2.png", "gallery3.png", "gallery4.png",
-        "gallery5.png", "gallery6.png", "gallery7.png", "gallery8.png",
-        "logo1.jpg", "logo2.jpg", "background.png"
+        "alas btfly 2.jpg",
+        "alas btfly.jpg",
+        "canto de las estrellas 2.jpg",
+        "canto de las estrellas 3.jpg",
+        "canto de las estrellas.jpg",
+        "Copa de los espiritus del bosque (1).png",
+        "Copa de los espiritus del bosque.png",
+        "cupcake alas de mariposa.jpg",
+        "elixir crepus.jpg",
+        "elixir del crepusculo 2.jpg",
+        "elixir del crepusculo 3.jpg",
+        "elixir del crepusculo 4.jpg",
+        "elixir del crepusculo.jpg",
+        "golden milk enc 2.jpg",
+        "golden milk enc 3.jpg",
+        "golden milk enc.jpg",
+        "hot susurro d hada.jpg",
+        "maccaron 4.jpg",
+        "maccaron 5.jpg",
+        "maccarons 3.jpg",
+        "maccarons nectar de los elfos 2.jpg",
+        "maccarons nectar de los elfos.jpg",
+        "mocca menta (1).png",
+        "mocca menta.png",
+        "susurro de hada caliente.jpg",
+        "susurro de las estrellas cheesecake 2.jpg",
+        "susurro de las estrellas cheesecake 3.jpg",
+        "susurro de las estrellas cheesecake 4.jpg",
+        "susurro de las estrellas cheesecake.jpg",
+        "susurro de luna 1.jpg",
+        "susurro de luna 2.jpg",
+        "SUSURRO NOCTURNO.jpg",
+        "SUSURRO NOCTURNO2.jpg",
+        "SUSURRO NOCTURNO3.jpg",
+        "té danza d las estrellas ice.jpg",
+        "té danza de las estrellas.jpg",
+        "te danza star.jpg"
     ];
 
     const gallery = document.getElementById("gallery");
@@ -75,7 +109,7 @@ document.addEventListener("DOMContentLoaded", function () {
         gallery.innerHTML = '';
         for (let i = currentIndex; i < currentIndex + imagesPerPage && i < imageNames.length; i++) {
             let img = document.createElement("img");
-            img.src = `./src/${imageNames[i]}`;
+            img.src = `./src/gallery/${imageNames[i]}`;
             img.alt = imageNames[i];
             img.dataset.filename = imageNames[i].charAt(0).toUpperCase() + imageNames[i].slice(1).split('.').slice(0, -1).join('.');
             img.classList.add("gallery-img");
